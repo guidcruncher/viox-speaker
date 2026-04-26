@@ -2,7 +2,7 @@ FROM alpine:latest AS base
 ARG TZ=UTC
 
 ENV SPEAKER_NAME="VIOX Music Server"
-ENV VIOX_HOST=127.0.0.1
+ENV VIOX_HOST=tcp://127.0.0.1:1704
  
 RUN <<EOF
 addgroup -S appgroup -g 1001
